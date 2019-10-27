@@ -1,0 +1,148 @@
+body
+{
+    padding:0;
+    margin:0;
+    background:ivory;
+}
+.header
+{
+    width:100%;
+    height:300px;
+    background: #000;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
+.title
+{
+    margin:0;
+    padding:0;
+    color:transparent;
+   font-size:6em;
+   font-family: 'bad script',cursive;
+   width:40%;
+   height:auto;
+  
+   
+}
+ h1 span
+{
+   
+display:table-cell;
+animation: animate 1s linear infinite;
+}
+h1 span:nth-child(8n+1)
+{
+    animation-delay: 0.5s;;
+}
+h1 span:nth-child(8n+2)
+{
+    animation-delay: 1s;;
+}
+h1 span:nth-child(8n+3)
+{
+    animation-delay: 1.5s;;
+}
+h1 span:nth-child(8n+4)
+{
+    animation-delay: 1.7s;;
+}
+h1 span:nth-child(8n+5)
+{
+    animation-delay: 1.3s;;
+}
+h1 span:nth-child(8n+6)
+{
+    animation-delay: 1.4s;;
+}
+h1 span:nth-child(8n+7)
+{
+    animation-delay: 2.2s;;
+}
+h1 span:nth-child(8n+8)
+{
+    animation-delay: 1.5s;;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        color:#fff;
+        filter:blur(2px);
+        text-shadow:0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff;
+        
+    }
+}
+.container
+{
+   margin:10px 10% 10%;
+    
+    min-height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    width:80%;
+    justify-content: center;
+    align-items: center;
+   
+    
+
+}
+.flex_item
+{
+   
+   width:300px;
+   margin:20px;
+  
+   height: 300px;
+   display: inline-flex;
+ 
+   position: relative;
+   
+  
+}
+.project
+{
+    padding:0;
+    position: absolute;
+    width:100%;
+    height:80%;
+    font-size:50px;
+    font-weight: bald;
+  background: #00b3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 50px 10px 80px;;
+}
+.underproject
+{
+    position: absolute;
+    width:100%;
+    height:20%;
+    bottom:0;
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:skyblue;
+    cursor:pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    
+
+}
+
+.underproject:hover
+{
+  
+   transition: 1s;
+    height:100%;
+}
